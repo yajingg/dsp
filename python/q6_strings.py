@@ -1,7 +1,6 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
 def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
@@ -18,7 +17,7 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    print('Number of donuts: ' + str(count if count<10 else 'many'))
 
 
 def both_ends(s):
@@ -37,7 +36,7 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    print(s[:2]+s[-2:] if len(s)>=2 else '')
 
 
 def fix_start(s):
@@ -56,7 +55,9 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    b = s[0]
+    s = s.replace(b,'*')
+    print(b+s[1:])
 
 
 def mix_up(a, b):
@@ -74,7 +75,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    print(b[:2]+a[2:]+' '+a[:2]+b[2:])
 
 
 def verbing(s):
@@ -91,7 +92,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) < 3:
+        o = s
+    elif s.find('ing',-3) != -1:
+        o = s + 'ly'
+    else:
+        o = s + 'ing'
+    print(o)
 
 
 def not_bad(s):
@@ -111,8 +118,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
-
+    n = s.find('not')
+    b = s.find('bad')
+    
+    if n > -1 and b > n:
+        print(s[:n]+'good'+s[b+3:])
+    else:
+        print(s)
+    
 
 def front_back(a, b):
     """
@@ -130,4 +143,8 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    na = len(a)//2 + len(a)%2
+    nb = len(b)//2 + len(b)%2
+    print(a[:na]+b[:nb]+a[na:]+b[nb:])
+
+
