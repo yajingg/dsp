@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> lists and tuples are a collections of things. Lists are mutable, while tuples are not. Lists work as keys in dictionary since they can be changed later.
 
 ---
 
@@ -20,7 +20,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists and sets are collections, lists are ordered while sets are not, objects in sets are also distinct. Lists are very general, while sets are useful for the property of uniqueness. Finding an element presumably is easier in a set, since it is guaranteed to only contain at most 1 of the elemet, so the algorithm can stop when it is found.
 
 ---
 
@@ -28,7 +28,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> lambda is a quick inline function. sorted(words, key=lambda w: w.lower())
 
 ---
 
@@ -36,7 +36,13 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehension is an easy way of generating a list.
+>> even = [x*2 for x in range(5)]
+>> even = list(map(lambda x: x*2,range(5)))
+>> even = list(filter(lambda x: x%2 == 0, range(10)))
+>> Comprehensions can work with simple functions, map work with more complex ones, and filter work better with subsets
+>> evenset = {x*2 for x in range(5)}
+>> evendict = {x:x*2 for x in range(5)}
 
 ---
 
@@ -51,7 +57,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 937 days
 
 b.  
 ```
@@ -59,7 +65,7 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+>> 513 days
 
 c.  
 ```
@@ -67,7 +73,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
+>> 7850 days
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
