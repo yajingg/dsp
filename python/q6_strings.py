@@ -17,7 +17,7 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    print('Number of donuts: ' + str(count if count<10 else 'many'))
+    return ('Number of donuts: ' + str(count if count<10 else 'many'))
 
 
 def both_ends(s):
@@ -36,7 +36,7 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    print(s[:2]+s[-2:] if len(s)>=2 else '')
+    return (s[:2]+s[-2:] if len(s)>=2 else '')
 
 
 def fix_start(s):
@@ -57,7 +57,7 @@ def fix_start(s):
     """
     b = s[0]
     s = s.replace(b,'*')
-    print(b+s[1:])
+    return (b+s[1:])
 
 
 def mix_up(a, b):
@@ -75,7 +75,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    print(b[:2]+a[2:]+' '+a[:2]+b[2:])
+    return (b[:2]+a[2:]+' '+a[:2]+b[2:])
 
 
 def verbing(s):
@@ -98,7 +98,7 @@ def verbing(s):
         o = s + 'ly'
     else:
         o = s + 'ing'
-    print(o)
+    return (o)
 
 
 def not_bad(s):
@@ -122,9 +122,9 @@ def not_bad(s):
     b = s.find('bad')
     
     if n > -1 and b > n:
-        print(s[:n]+'good'+s[b+3:])
+        return (s[:n]+'good'+s[b+3:])
     else:
-        print(s)
+        return (s)
     
 
 def front_back(a, b):
@@ -145,6 +145,6 @@ def front_back(a, b):
     """
     na = len(a)//2 + len(a)%2
     nb = len(b)//2 + len(b)%2
-    print(a[:na]+b[:nb]+a[na:]+b[nb:])
+    return (a[:na]+b[:nb]+a[na:]+b[nb:])
 
 
