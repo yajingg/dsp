@@ -66,7 +66,9 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> {'Yang': [[' Ph.D.', 'Assistant Professor', 'weiyang@mail.med.upenn.edu']], 'Xiao': [[' PhD', 'Assistant Professor', 'rxiao@mail.med.upenn.edu']], 'Joffe': [[' MD MPH Ph.D', 'Professor', 'mjoffe@mail.med.upenn.edu']]}
+```
+{'Yang': [[' Ph.D.', 'Assistant Professor', 'weiyang@mail.med.upenn.edu']], 'Xiao': [[' PhD', 'Assistant Professor', 'rxiao@mail.med.upenn.edu']], 'Joffe': [[' MD MPH Ph.D', 'Professor', 'mjoffe@mail.med.upenn.edu']]}
+```
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -76,11 +78,14 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> {('Jinbo', 'Chen'): [[' Ph.D.', 'Associate Professor', 'jinboche@upenn.edu']], ('Yenchih', 'Hsu'): [[' Ph.D.', 'Assistant Professor', 'hsu9@mail.med.upenn.edu']], ('Alisa Jane', 'Stephens'): [[' Ph.D.', 'Assistant Professor', 'alisaste@mail.med.upenn.edu']]}
+```
+{('Jinbo', 'Chen'): [[' Ph.D.', 'Associate Professor', 'jinboche@upenn.edu']], ('Yenchih', 'Hsu'): [[' Ph.D.', 'Assistant Professor', 'hsu9@mail.med.upenn.edu']], ('Alisa Jane', 'Stephens'): [[' Ph.D.', 'Assistant Professor', 'alisaste@mail.med.upenn.edu']]}
+```
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
->> ('Scarlett L.', 'Bellamy') [[' Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]
+```
+('Scarlett L.', 'Bellamy') [[' Sc.D.', 'Associate Professor', 'bellamys@mail.med.upenn.edu']]
 ('Warren B.', 'Bilker') [['Ph.D.', 'Professor', 'warren@upenn.edu']]
 ('Matthew W', 'Bryan') [[' PhD', 'Assistant Professor', 'bryanma@upenn.edu']]
 ('Jinbo', 'Chen') [[' Ph.D.', 'Associate Professor', 'jinboche@upenn.edu']]
@@ -117,6 +122,7 @@ Print the first 3 key and value pairs of the dictionary:
 ('Sharon Xiangwen', 'Xie') [[' Ph.D.', 'Associate Professor', 'sxie@mail.med.upenn.edu']]
 ('Dawei', 'Xie') [[' PhD', 'Assistant Professor', 'dxie@upenn.edu']]
 ('Wei (Peter)', 'Yang') [[' Ph.D.', 'Assistant Professor', 'weiyang@mail.med.upenn.edu']]
+```
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
